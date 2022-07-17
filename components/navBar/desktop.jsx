@@ -8,9 +8,9 @@ export default function DesktopNavBar() {
   return (
     <nav>
       <ul className="flex space-x-10">
-        {pagelist.map((item) => (
+        {pagelist.map((item, index) => (
           <li>
-            <Link href={item.url}>
+            <Link key={index} href={item.url}>
               <a
                 className={
                   router.pathname === item.url

@@ -34,9 +34,9 @@ export default function Footer() {
           <nav className="space-y-4">
             <h4 className="font-bold text-3xl">I nostri prodotti</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
-              {navlist.map((item) => (
+              {navlist.map((item, index) => (
                 <li>
-                  <Link href={item.url}>
+                  <Link key={index} href={item.url}>
                     <a
                       className={
                         router.pathname === item.url
@@ -54,9 +54,9 @@ export default function Footer() {
           <nav className="space-y-4">
             <h4 className="font-bold text-3xl">Scopri tutto</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
-              {pagelist.map((item) => (
+              {pagelist.map((item, index) => (
                 <li>
-                  <Link href={item.url}>
+                  <Link key={index} href={item.url}>
                     <a
                       className={
                         router.pathname === item.url

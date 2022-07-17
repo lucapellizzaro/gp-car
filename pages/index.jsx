@@ -99,8 +99,9 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {productslist.map((item) => (
+            {productslist.map((item, index) => (
               <Card
+                key={index}
                 cardTitle={item.title}
                 cardText={item.desc}
                 cardLink="Scopri tutto"

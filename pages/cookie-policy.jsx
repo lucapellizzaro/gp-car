@@ -31,8 +31,7 @@ export default function Aboutus() {
                 l'utilizzo di cookies.
               </p>
               <p>
-                Intanto puoi navigare sereno su tutto questo sito cookie-less
-                "gp-car.com".
+                Intanto puoi navigare sereno su tutto questo sito cookie-less.
               </p>
               <Link href="/">
                 <a>Torna alla home</a>
