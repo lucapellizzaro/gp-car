@@ -42,7 +42,7 @@ export default function Contactform() {
           name="full-name"
           id="full-name"
           autoComplete="name"
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded"
+          className="block w-full py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded"
           placeholder="Nomimativo o azienda"
         />
       </div>
@@ -57,7 +57,7 @@ export default function Contactform() {
           name="email"
           type="email"
           autoComplete="email"
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded"
+          className="block w-full py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded"
           placeholder="Indirizzo e-mail"
         />
       </div>
@@ -73,7 +73,7 @@ export default function Contactform() {
           name="phone"
           id="phone"
           autoComplete="tel"
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded"
+          className="block w-full py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded"
           placeholder="Telefono"
         />
       </div>
@@ -88,7 +88,7 @@ export default function Contactform() {
           id="message"
           name="message"
           rows={4}
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border border-gray-300 rounded"
+          className="block w-full py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border border-gray-300 rounded"
           placeholder="Scrivi un messaggio o richiesta"
           defaultValue={""}
         />

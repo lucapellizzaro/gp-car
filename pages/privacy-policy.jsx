@@ -69,10 +69,9 @@ export default function Privacy() {
               <p>
                 Sul Sito non &egrave; possibile effettuare acquisti. Pertanto, i
                 Suoi dati personali non saranno trattati per questa
-                finalit&agrave;.Il Titolare del Trattamento non tratta i dati
-                dell&amp;#39;utente per inviare email di
-                &amp;#34;remainder&amp;#34; di acquisto di prodotti e/o servizi
-                del Titolare stesso.
+                finalit&agrave;. Il Titolare del Trattamento non tratta i dati
+                dell&apos;utente per inviare email di &quot;remainder&quot; di
+                acquisto di prodotti e/o servizi del Titolare stesso.
               </p>
               <h4>Rispondere alla Sue richieste</h4>
               <p>
@@ -83,7 +82,7 @@ export default function Privacy() {
                 giuridica del trattamento &egrave; il legittimo interesse del
                 Titolare del Trattamento a dare seguito alle richieste
                 dell&rsquo;utente. Questo legittimo interesse &egrave;
-                equivalente all&amp;#39;interesse dell&amp;#39;utente a ricevere
+                equivalente all&apos;interesse dell&apos;utente a ricevere
                 risposta alle comunicazioni inviate al Titolare del Trattamento.
               </p>
               <h4>Marketing generico</h4>
@@ -96,7 +95,7 @@ export default function Privacy() {
               <p>
                 Previo Suo consenso, il Titolare del Trattamento potr&agrave;
                 trattare i Suoi dati personali per finalit&agrave; di
-                profilazione, ossia per l&amp;#39;analisi delle Sue scelte di
+                profilazione, ossia per l&apos;analisi delle Sue scelte di
                 consumo attraverso la rivelazione della tipologia e della
                 frequenza degli acquisti da Lei effettuati, al fine di inviarLe
                 materiale pubblicitario e/o newsletter relativi a prodotti
@@ -121,24 +120,24 @@ export default function Privacy() {
               <h4>Geolocalizzazione</h4>
               <p>
                 Il Sito non implementa strumenti di geolocalizzazione
-                dell&amp;#39;indirizzo IP dell&amp;#39;utente.
+                dell&apos;indirizzo IP dell&apos;utente.
               </p>
               <h4>Comunicazione dei dati personali</h4>
               <p>
-                Nell&amp;#39;ambito della propria ordinaria attivit&agrave;, il
+                Nell&apos;ambito della propria ordinaria attivit&agrave;, il
                 Titolare del Trattamento pu&ograve; comunicare i Suoi dati
-                personali a determinate categorie di soggetti.
-                All&amp;#39;articolo 2 Lei pu&ograve; trovare l&amp;#39;elenco
-                dei soggetti ai quali il Titolare del Trattamento comunica i
-                Suoi dati personali. Per agevolare la tutela dei Suoi diritti,
-                l&amp;#39;articolo 2 pu&ograve; specificare in alcuni casi
-                quando i Suoi dati non vengono comunicati a terzi.
+                personali a determinate categorie di soggetti. All&apos;articolo
+                2 Lei pu&ograve; trovare l&apos;elenco dei soggetti ai quali il
+                Titolare del Trattamento comunica i Suoi dati personali. Per
+                agevolare la tutela dei Suoi diritti, l&apos;articolo 2
+                pu&ograve; specificare in alcuni casi quando i Suoi dati non
+                vengono comunicati a terzi.
               </p>
               <p>
-                La &amp;#34;comunicazione&amp;#34; a terzi del dato personale
-                &egrave; diversa dalla &amp;#34;cessione&amp;#34; (disciplinata
-                al punto che precede). Infatti, nella comunicazione il terzo al
-                quale &egrave; trasmesso il dato pu&ograve; usarlo solo per le
+                La &quot;comunicazione&quot; a terzi del dato personale &egrave;
+                diversa dalla &quot;cessione&quot; (disciplinata al punto che
+                precede). Infatti, nella comunicazione il terzo al quale
+                &egrave; trasmesso il dato pu&ograve; usarlo solo per le
                 specifiche finalit&agrave; descritte nel rapporto con il
                 Titolare del Trattamento. Nella cessione, invece, il terzo
                 diventa Titolare del Trattamento autonomo del dato personale.
@@ -169,11 +168,11 @@ export default function Privacy() {
                 alle circostanze.
               </p>
               <p>
-                1.3 Tramite il Sito non vengono trattati &amp;#34;dati
-                particolari&amp;#34;. I dati particolari sono quelli che possono
-                rivelare l&amp;#39;origine razziale ed etnica, le convinzioni
+                1.3 Tramite il Sito non vengono trattati &quot;dati
+                particolari&quot;. I dati particolari sono quelli che possono
+                rivelare l&apos;origine razziale ed etnica, le convinzioni
                 religiose, filosofiche o di altro genere, le opinioni politiche,
-                l&amp;#39;adesione a partiti, sindacati, associazioni od
+                l&apos;adesione a partiti, sindacati, associazioni od
                 organizzazioni a carattere religioso, filosofico, politico o
                 sindacale, lo stato di salute e la vita sessuale.
               </p>
@@ -219,9 +218,9 @@ export default function Privacy() {
                 <li>
                   Il Titolare del Trattamento non si avvale di piattaforme CRM
                   (societ&agrave; che svolgono in particolare
-                  l&amp;#39;attivit&agrave; di inviare comunicazioni
-                  automatizzate agli utenti). Pertanto, i Suoi dati personali
-                  non vengono comunicati a queste societ&agrave;.
+                  l&apos;attivit&agrave; di inviare comunicazioni automatizzate
+                  agli utenti). Pertanto, i Suoi dati personali non vengono
+                  comunicati a queste societ&agrave;.
                 </li>
                 <li>
                   Il Titolare del Trattamento non si avvale di societ&agrave;
@@ -250,16 +249,16 @@ export default function Privacy() {
                 </li>
               </ul>
               <p>
-                3.2 Fermo quanto previsto all&amp;#39;articolo 3.1, il Titolare
-                del Trattamento pu&ograve; conservare i Suoi dati personali per
-                il tempo richiesto da normative specifiche, come di volta in
-                volta modificate.
+                3.2 Fermo quanto previsto all&apos;articolo 3.1, il Titolare del
+                Trattamento pu&ograve; conservare i Suoi dati personali per il
+                tempo richiesto da normative specifiche, come di volta in volta
+                modificate.
               </p>
               <h4>Art. 4 Trasferimento dei dati personali</h4>
               <p>
-                4.1 Il Titolare del Trattamento ha sede all&amp;#39;interno
-                dell&amp;#39;Unione europea. Pertanto, il trattamento dei Suoi
-                dati &egrave; sicuro dal punto di vista normativo in quanto
+                4.1 Il Titolare del Trattamento ha sede all&apos;interno
+                dell&apos;Unione europea. Pertanto, il trattamento dei Suoi dati
+                &egrave; sicuro dal punto di vista normativo in quanto
                 disciplinato dal GDPR. Qualora il trasferimento dei Suoi dati
                 personali avvenga in un Paese extra-UE e per il quale la
                 Commissione europea ha espresso un giudizio di adeguatezza, il
@@ -271,14 +270,14 @@ export default function Privacy() {
               </p>
               <ul>
                 <li>
-                  Si invita pertanto l&amp;#39;utente ad accedere con
+                  Si invita pertanto l&apos;utente ad accedere con
                   regolarit&agrave; al presente articolo per verificare se il
                   trasferimento dei Suoi dati personali avviene in un Paese con
                   queste caratteristiche.
                 </li>
               </ul>
               <p>
-                4.2 Fermo quanto indicato all&amp;#39;articolo 4.1, i Suoi dati
+                4.2 Fermo quanto indicato all&apos;articolo 4.1, i Suoi dati
                 possono essere trasferiti anche in Paesi extra-UE e per i quali
                 la Commissione europea non ha espresso un giudizio di
                 adeguatezza. Lei &egrave; pertanto invitato a visionare con
@@ -289,18 +288,18 @@ export default function Privacy() {
                 4.3 In questo articolo il Titolare del Trattamento indica i
                 Paesi presso i quali eventualmente dirige in modo specifico la
                 propria attivit&agrave;. Questa circostanza pu&ograve; implicare
-                l&amp;#39;applicazione della normativa del Paese di riferimento,
+                l&apos;applicazione della normativa del Paese di riferimento,
                 unitamente a quella del GDPR.&nbsp;
               </p>
               <ul>
                 <li>
-                  Su richiesta dell&amp;#39;utente, il Titolare del Trattamento
+                  Su richiesta dell&apos;utente, il Titolare del Trattamento
                   applicher&agrave; al trattamento dei dati personali la
                   normativa eventualmente pi&ugrave; favorevole prevista dalla
-                  legislazione nazionale dell&amp;#39;utente stesso.
+                  legislazione nazionale dell&apos;utente stesso.
                 </li>
               </ul>
-              <h4>Art. 5. Diritti dell&amp;#39;interessato</h4>
+              <h4>Art. 5. Diritti dell&apos;interessato</h4>
               <p>
                 Ai sensi dell&rsquo;art. 13 del Regolamento Privacy, il Titolare
                 del Trattamento La informa che Lei ha diritto di:

@@ -26,7 +26,7 @@ export default function Cookies() {
                 Al momento non abbiamo bisogno di installare cookie su questo
                 sito web, se in futuro lo faremo, secondo le norme di legge
                 metteremo un banner ben visibile dove potrai personalizzazione
-                l&#39;utilizzo di cookies.
+                l&apos;utilizzo di cookies.
               </p>
               <p>
                 Intanto puoi navigare sereno su tutto questo sito cookie-less.
