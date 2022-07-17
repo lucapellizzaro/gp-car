@@ -35,8 +35,8 @@ export default function Footer() {
             <h4 className="font-bold text-3xl">I nostri prodotti</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
               {navlist.map((item, index) => (
-                <li>
-                  <Link key={index} href={item.url}>
+                <li key={index}>
+                  <Link href={item.url}>
                     <a
                       className={
                         router.pathname === item.url
@@ -55,8 +55,8 @@ export default function Footer() {
             <h4 className="font-bold text-3xl">Scopri tutto</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
               {pagelist.map((item, index) => (
-                <li>
-                  <Link key={index} href={item.url}>
+                <li key={index}>
+                  <Link href={item.url}>
                     <a
                       className={
                         router.pathname === item.url
@@ -81,17 +81,17 @@ export default function Footer() {
           </p>
           <p className="flex space-x-6">
             <Link href="/privacy-policy">
-              <a class="underline hover:text-primary">Privacy Policy</a>
+              <a className="underline hover:text-primary">Privacy Policy</a>
             </Link>
             <Link href="/cookie-policy">
-              <a class="underline hover:text-primary">Cookies Policy</a>
+              <a className="underline hover:text-primary">Cookies Policy</a>
             </Link>
           </p>
           <p>
             Made with <span className="text-red-600">&hearts;</span> by{" "}
             <a
               href="https://bearoba.it"
-              class="underline hover:text-primary"
+              className="underline hover:text-primary"
               target="_blank"
               rel="noreferrer noopener"
             >

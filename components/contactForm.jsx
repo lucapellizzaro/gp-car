@@ -102,8 +102,8 @@ export default function Contactform() {
           className="h-4 w-4 mt-1 text-primary focus:ring-primary border-gray-300 rounded"
         />
         <label htmlFor="remember-me" className="ml-3 block text-sm">
-          Ho letto l'informativa privacy e acconsento alla memorizzazione dei
-          miei dati nel vostro archivio secondo quanto è stabilito dal
+          Ho letto l&#39;informativa privacy e acconsento alla memorizzazione
+          dei miei dati nel vostro archivio secondo quanto è stabilito dal
           regolamento europeo per la protezione dei dati personali n.679/2016
           GDPR{" "}
         </label>

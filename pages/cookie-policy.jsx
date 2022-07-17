@@ -3,10 +3,8 @@ import { NextSeo } from "next-seo";
 import Title from "../components/title";
 import Article from "../components/article";
 import Link from "next/link";
-import Image from "next/image";
-import Gridbox from "../components/gridBox";
 
-export default function Aboutus() {
+export default function Cookies() {
   return (
     <main>
       <NextSeo
@@ -28,7 +26,7 @@ export default function Aboutus() {
                 Al momento non abbiamo bisogno di installare cookie su questo
                 sito web, se in futuro lo faremo, secondo le norme di legge
                 metteremo un banner ben visibile dove potrai personalizzazione
-                l'utilizzo di cookies.
+                l&#39;utilizzo di cookies.
               </p>
               <p>
                 Intanto puoi navigare sereno su tutto questo sito cookie-less.
