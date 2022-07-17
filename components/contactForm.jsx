@@ -4,9 +4,9 @@ import Botpoison from "@botpoison/browser";
 import React, { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
 
-const FORMSPARK_FORM_ID = "nxCV9YCw";
+const FORMSPARK_FORM_ID = process.env.NEXT_PUBLIC_FORMSPARK_ID;
 const botpoison = new Botpoison({
-  publicKey: "pk_49627a99-06b7-43b3-b30a-f4107cdb0d37",
+  publicKey: process.env.NEXT_PUBLIC_BOTPOISON_ID,
 });
 
 export default function Contactform() {

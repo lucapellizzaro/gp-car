@@ -28,7 +28,7 @@ export default function Aboutus() {
                 Regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio
                 del 27 aprile 2016 (GDPR). In vigore dal 01/03/2022
               </h4>
-              <hr></hr>
+              <hr />
               <h3>Premessa</h3>
               <p>
                 La presente informativa tiene conto di quanto indicato dal GDPR
@@ -145,7 +145,7 @@ export default function Aboutus() {
                 dare corretto adempimento agli obblighi previsti dalle leggi in
                 vigore.
               </p>
-              <hr></hr>
+              <hr />
               <h3>INFORMATIVA PRIVACY SPECIFICA</h3>
 
               <h4>Art. 1 Modalit&agrave; di trattamento</h4>
