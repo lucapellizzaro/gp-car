@@ -11,6 +11,8 @@ export default function Header() {
             <Link href="/">
               <a title="Torna alla home">
                 <img
+                  width="300"
+                  height="73"
                   src="/img/gp-car-logo-w.svg"
                   className="w-auto h-10 -ml-1 my-1 md:h-12"
                   alt="GP-CAR logo"

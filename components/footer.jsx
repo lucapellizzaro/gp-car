@@ -14,6 +14,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-bold text-3xl">
               <img
+                width="300"
+                height="73"
                 src="/img/gp-car-logo-blue.svg"
                 className="w-auto h-10 -ml-2 my-1 md:h-12"
                 alt="GP-CAR logo"

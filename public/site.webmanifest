@@ -1,6 +1,7 @@
 {
   "name": "GP-CAR Carrelli elevatori",
   "short_name": "GP-CAR",
+  "start_url": "https://gp-car.com",
   "icons": [
     {
       "src": "icon/android-chrome-192x192.png",

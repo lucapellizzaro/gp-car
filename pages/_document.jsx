@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="it_IT">
+    <Html lang="it">
       <Head>
         <link
           rel="apple-touch-icon"
@@ -21,6 +21,7 @@ export default function Document() {
           sizes="16x16"
           href="/icon/favicon-16x16.png"
         />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className="text-dark scroll-smooth bg-white font-sans text-base lg:text-lg xl:text-xl antialiased h-full">
