@@ -90,7 +90,6 @@ export default function Contactform() {
           rows={4}
           className="block w-full py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border border-gray-300 rounded"
           placeholder="Scrivi un messaggio o richiesta"
-          defaultValue={""}
         />
       </div>
       <div className="flex items-start">

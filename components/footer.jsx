@@ -83,12 +83,12 @@ export default function Footer() {
         </div>
       </Container>
       <Container size="little">
-        <div className="flex flex-col md:flex-row text-xs md:text-sm md:space-x-10">
+        <div className="flex flex-col md:flex-row text-xs text-center md:text-sm md:space-x-10">
           <p>
             &copy;{new Date().getFullYear()} {BRAND_NAME} - P.Iva 03335850248 -
             C.F. PNAGRG67A25B812X
           </p>
-          <p className="flex space-x-6">
+          <p className="flex justify-center space-x-6">
             <Link href="/privacy-policy">
               <a className="underline hover:text-primary">Privacy Policy</a>
             </Link>

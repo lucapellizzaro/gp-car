@@ -6,27 +6,27 @@ import { Menu, Transition } from "@headlessui/react";
 
 import { forwardRef } from "react";
 
-const MyLink = forwardRef((props, ref) => {
-  const router = useRouter();
-  let { href, children, ...rest } = props;
-  return (
-    <Link href={href}>
-      <a
-        className={
-          router.pathname === href
-            ? "text-secondary px-12 py-3"
-            : "hover:text-secondary px-12 py-3"
-        }
-        ref={ref}
-        {...rest}
-      >
-        {children}
-      </a>
-    </Link>
-  );
-});
-
 export default function MobileNavBar() {
+  const MyLink = forwardRef((props, ref) => {
+    const router = useRouter();
+    let { href, children, ...rest } = props;
+    return (
+      <Link href={href}>
+        <a
+          className={
+            router.pathname === href
+              ? "text-secondary px-12 py-3"
+              : "hover:text-secondary px-12 py-3"
+          }
+          ref={ref}
+          {...rest}
+        >
+          {children}
+        </a>
+      </Link>
+    );
+  });
+
   return (
     <Menu>
       <Menu.Button className="relative p-3">
