@@ -31,7 +31,7 @@ MyLink.displayName = "MyLink";
 function MobileNavBar() {
   return (
     <Menu>
-      <Menu.Button className="relative p-3">
+      <Menu.Button className="relative p-3 inline-flex focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-7 w-7"
@@ -57,8 +57,8 @@ function MobileNavBar() {
         leaveFrom="transition opacity-100"
         leaveTo="transition opacity-0"
       >
-        <Menu.Items className="fixed flex flex-col text-xl top-0 z-50 w-10/12 bg-primary bg-opacity-95 right-0 h-screen">
-          <Menu.Button className="relative flex justify-end items-center p-7">
+        <Menu.Items className="fixed flex flex-col text-xl top-0 z-50 w-[85%] bg-primary bg-opacity-95 right-0 h-screen">
+          <Menu.Button className="relative justify-end inline-flex focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary p-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
