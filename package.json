@@ -12,6 +12,7 @@
     "@botpoison/browser": "^0.1.30",
     "@botpoison/node": "^0.1.10",
     "@formspark/use-formspark": "^0.1.39",
+    "@headlessui/react": "^1.6.6",
     "classnames": "^2.3.1",
     "clsx": "^1.2.1",
     "next": "12.2.2",

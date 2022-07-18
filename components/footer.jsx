@@ -12,7 +12,16 @@ export default function Footer() {
       <Container size="big">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-4">
-            <h3 className="font-bold text-3xl">{BRAND_NAME}</h3>
+            <h3 className="font-bold text-3xl">
+              <img
+                src="/img/gp-car-logo-blue.svg"
+                className="w-auto h-10 -ml-2 my-1 md:h-12"
+                alt="GP-CAR logo"
+              />
+            </h3>
+
+            <h4 className="font-bold text-2xl">{BRAND_NAME}</h4>
+
             <p>
               Via Cima XII, 8a
               <br />
@@ -32,7 +41,7 @@ export default function Footer() {
             </p>
           </div>
           <nav className="space-y-4">
-            <h4 className="font-bold text-3xl">I nostri prodotti</h4>
+            <h4 className="font-bold text-2xl">I nostri prodotti</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
               {navlist.map((item, index) => (
                 <li key={index}>
@@ -52,7 +61,7 @@ export default function Footer() {
             </ul>
           </nav>
           <nav className="space-y-4">
-            <h4 className="font-bold text-3xl">Scopri tutto</h4>
+            <h4 className="font-bold text-2xl">Scopri tutto</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
               {pagelist.map((item, index) => (
                 <li key={index}>
