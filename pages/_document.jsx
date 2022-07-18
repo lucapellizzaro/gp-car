@@ -4,16 +4,24 @@ export default function Document() {
   return (
     <Html lang="it_IT">
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/icon/apple-touch-icon.png"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/icon/favicon-32x32.png"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className="text-dark scroll-smooth bg-white font-sans text-base lg:text-lg xl:text-xl antialiased h-full">
         <Main />

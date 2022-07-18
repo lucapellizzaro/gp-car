@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
+      sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {

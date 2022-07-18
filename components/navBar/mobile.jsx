@@ -27,6 +27,8 @@ export default function MobileNavBar() {
     );
   });
 
+  MyLink.displayName = "MyLink";
+
   return (
     <Menu>
       <Menu.Button className="relative p-3">
