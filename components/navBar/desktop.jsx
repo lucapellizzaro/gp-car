@@ -12,6 +12,7 @@ export default function DesktopNavBar() {
           <li key={index}>
             <Link href={item.url}>
               <a
+                title={item.label}
                 className={
                   router.pathname === item.url
                     ? "text-secondary px-3 py-2"

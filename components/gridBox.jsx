@@ -9,7 +9,7 @@ export default function Gridbox({ boxTitle, boxText, boxCta, boxLink }) {
         <h3>{boxTitle}</h3>
         <p>{boxText}</p>
         <Link href={boxLink}>
-          <a>{boxCta}</a>
+          <a title={boxCta}>{boxCta}</a>
         </Link>
       </Article>
     </div>

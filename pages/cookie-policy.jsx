@@ -32,7 +32,7 @@ export default function Cookies() {
                 Intanto puoi navigare sereno su tutto questo sito cookie-less.
               </p>
               <Link href="/">
-                <a>Torna alla home</a>
+                <a title="Torna alla home">Torna alla home</a>
               </Link>
             </Article>
           </div>

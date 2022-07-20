@@ -4,8 +4,6 @@ import Title from "../components/title";
 import Article from "../components/article";
 import Link from "next/link";
 
-import { BRAND_NAME } from "../lib/contants";
-
 export default function Vetrina() {
   return (
     <main>
@@ -31,7 +29,9 @@ export default function Vetrina() {
             </p>
             <p>Ma stanno arrivando nuovi carrelli elevatori e transpallet..</p>
             <Link href="/contatti">
-              <a>Richiesta informazioni</a>
+              <a title="Richiedi informazioni su carrelli elevatori">
+                Richiesta informazioni
+              </a>
             </Link>
           </Article>
         </Container>

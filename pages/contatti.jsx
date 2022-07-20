@@ -56,11 +56,11 @@ export default function Contactus() {
                 pec: gp-car (at) pec.it
               </p>
               <Link href="/privacy-policy">
-                <a>Privacy policy</a>
+                <a title="Privacy policy">Privacy policy</a>
               </Link>{" "}
               -{" "}
               <Link href="/cookie-policy">
-                <a>Cookie policy</a>
+                <a title="Cookies policy">Cookie policy</a>
               </Link>
             </Article>
           </div>

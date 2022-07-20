@@ -12,6 +12,7 @@ const MyLink = forwardRef((props, ref) => {
   return (
     <Link href={href}>
       <a
+        title={children}
         className={
           router.pathname === href
             ? "text-secondary px-12 py-3"

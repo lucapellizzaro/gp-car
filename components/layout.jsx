@@ -5,7 +5,7 @@ import Header from "./header";
 export default function Layout({ children }) {
   return (
     <>
-      <Annuncio>Sitoweb non reale, solo un test!</Annuncio>
+      {/* <Annuncio>Sitoweb non reale, solo un test!</Annuncio> */}
       <Header></Header>
       {children}
       <Footer></Footer>

@@ -339,7 +339,7 @@ export default function Privacy() {
                 dare comunicazione anche tramite email.
               </p>
               <Link href="/">
-                <a>Torna alla home</a>
+                <a title="Torna alla home">Torna alla home</a>
               </Link>
             </Article>
           </div>

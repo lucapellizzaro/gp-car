@@ -83,7 +83,7 @@ export default function Home() {
                 mantenere in efficienti i vostri carrelli elevatori.
               </p>
               <Link href="/contatti">
-                <a>Chiama ora</a>
+                <a title="Chiama ora servizio assistenza">Chiama ora</a>
               </Link>
             </Article>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
                 esteticamente “nuovi” grazie a lavaggio e verniciatura completi.
               </p>
               <Link href="/vetrina-carrelli-elevatori">
-                <a>Vedi tutto</a>
+                <a title="Vedi tutto usato garantito">Vedi tutto</a>
               </Link>
             </Article>
           </div>
@@ -192,7 +192,9 @@ export default function Home() {
               </p>
 
               <Link href="/contatti">
-                <a>Richiedi un preventivo</a>
+                <a title="Richiedi un preventivo carrello elevatore Montini">
+                  Richiedi un preventivo
+                </a>
               </Link>
             </Article>
           </div>

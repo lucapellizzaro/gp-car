@@ -49,6 +49,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link href={item.url}>
                     <a
+                      title={item.label}
                       className={
                         router.pathname === item.url
                           ? "text-gray-600"
@@ -69,6 +70,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link href={item.url}>
                     <a
+                      title={item.label}
                       className={
                         router.pathname === item.url
                           ? "text-gray-600"
@@ -92,15 +94,26 @@ export default function Footer() {
           </p>
           <p className="flex justify-center space-x-6">
             <Link href="/privacy-policy">
-              <a className="underline hover:text-primary">Privacy Policy</a>
+              <a
+                title="Privacy Policy"
+                className="underline hover:text-primary"
+              >
+                Privacy Policy
+              </a>
             </Link>
             <Link href="/cookie-policy">
-              <a className="underline hover:text-primary">Cookies Policy</a>
+              <a
+                title="Cookies Policy"
+                className="underline hover:text-primary"
+              >
+                Cookies Policy
+              </a>
             </Link>
           </p>
           <p>
-            Made with <span className="text-red-600">&hearts;</span> by{" "}
+            Creato con <span className="text-red-600">&hearts;</span> da{" "}
             <a
+              title="Creato con amore da Bearoba"
               href="https://bearoba.it"
               className="underline hover:text-primary"
               target="_blank"

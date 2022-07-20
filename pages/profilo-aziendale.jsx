@@ -55,7 +55,9 @@ export default function Aboutus() {
                 manifatturiera e alimentari.
               </p>
               <Link href="/vetrina-carrelli-elevatori">
-                <a>Vedi la nostra vetrina</a>
+                <a title="Vedi tutti i carrelli elevatori">
+                  Vedi la nostra vetrina
+                </a>
               </Link>
             </Article>
           </div>
@@ -135,7 +137,9 @@ export default function Aboutus() {
                 verifica da parte di personale abilitato con attestato!
               </p>
               <Link href="/contatti">
-                <a>Prenota un controllo</a>
+                <a title="Prenota controllo di sicurezza">
+                  Prenota un controllo
+                </a>
               </Link>
             </Article>
           </div>

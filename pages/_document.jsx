@@ -21,7 +21,7 @@ export default function Document() {
           sizes="16x16"
           href="/icon/favicon-16x16.png"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#1d4ed8" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className="text-dark scroll-smooth bg-white font-sans text-base lg:text-lg xl:text-xl antialiased h-full">

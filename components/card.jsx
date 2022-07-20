@@ -27,7 +27,7 @@ export default function Card({
         <h3>{cardTitle}</h3>
         <p>{cardText}</p>
         <Link href={cardUrl}>
-          <a>{cardLink}</a>
+          <a title={cardLink}>{cardLink}</a>
         </Link>
       </Article>
     </div>
