@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { productslist } from "../lib/arrayList";
 
-export default function Home({ products }) {
+export default function Home() {
   return (
     <main>
       <NextSeo
@@ -107,7 +107,7 @@ export default function Home({ products }) {
             </Article>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {products
+            {productslist
               .filter((id, index) => index < 3)
               .map((item, index) => (
                 <ProductCard
@@ -212,18 +212,4 @@ export default function Home({ products }) {
       </section>
     </main>
   );
-}
-
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts
-  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
-  const products = await res.json();
-
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      products,
-    },
-  };
 }

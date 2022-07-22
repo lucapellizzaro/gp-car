@@ -3,6 +3,15 @@ import { NextSeo } from "next-seo";
 import Title from "../../components/title";
 import ProductCard from "../../components/productCard";
 import Link from "next/link";
+import { productslist } from "../../lib/arrayList";
+
+export const getStaticProps = async () => {
+  return {
+    props: {
+      products: productslist,
+    },
+  };
+};
 
 export default function VetrinaProdotti({ products }) {
   return (
@@ -39,18 +48,4 @@ export default function VetrinaProdotti({ products }) {
       </section>
     </main>
   );
-}
-
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts
-  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
-  const products = await res.json();
-
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      products,
-    },
-  };
 }

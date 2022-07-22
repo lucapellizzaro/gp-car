@@ -4,31 +4,23 @@ import Title from "../../components/title";
 import { productslist } from "../../lib/arrayList";
 import Container from "../../components/container";
 
-export async function getStaticPaths() {
-  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
-  const products = await res.json();
-
-  const paths = products.map((product) => {
-    return {
-      params: { slug: product.slug.toString() },
-    };
-  });
-
+export const getStaticProps = async ({ params }) => {
+  const productslist = productlist.filter(
+    (p) => p.slug.toString() === params.slug
+  );
   return {
-    paths,
-    fallback: false,
+    props: {
+      product: productslist[0],
+    },
   };
-}
+};
 
-export async function getStaticProps(context) {
-  const slug = context.params.slug;
-  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG" + slug);
-  const data = await res.json();
-
-  return {
-    props: { product: data },
-  };
-}
+export const getStaticPaths = async () => {
+  const paths = productlist.map((product) => ({
+    params: { slug: product.slug.toString() },
+  }));
+  return { paths, fallback: false };
+};
 
 function Prodotto({ product }) {
   console.log(product);
