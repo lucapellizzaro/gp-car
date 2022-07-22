@@ -216,9 +216,7 @@ export default function Home({ products }) {
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const res = await fetch(
-    "https://my-json-server.typicode.com/lucapellizzaro/gp-car"
-  );
+  const res = await fetch("https://gp-car.vercel.app/db");
   const products = await res.json();
 
   // By returning { props: { posts } }, the Blog component

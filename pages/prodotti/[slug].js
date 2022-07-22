@@ -5,9 +5,7 @@ import { productslist } from "../../lib/arrayList";
 import Container from "../../components/container";
 
 export async function getStaticPaths() {
-  const res = await fetch(
-    "https://my-json-server.typicode.com/lucapellizzaro/gp-car"
-  );
+  const res = await fetch("https://gp-car.vercel.app/db");
   const products = await res.json();
 
   const paths = products.map((product) => {
@@ -24,9 +22,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const slug = context.params.slug;
-  const res = await fetch(
-    "https://my-json-server.typicode.com/lucapellizzaro/gp-car/" + slug
-  );
+  const res = await fetch("https://gp-car.vercel.app/db/" + slug);
   const data = await res.json();
 
   return {
