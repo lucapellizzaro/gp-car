@@ -5,7 +5,7 @@ import { productslist } from "../../lib/arrayList";
 import Container from "../../components/container";
 
 export async function getStaticPaths() {
-  const res = await fetch("https://gp-car.vercel.app/db");
+  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
   const products = await res.json();
 
   const paths = products.map((product) => {
@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const slug = context.params.slug;
-  const res = await fetch("https://gp-car.vercel.app/db/" + slug);
+  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG" + slug);
   const data = await res.json();
 
   return {

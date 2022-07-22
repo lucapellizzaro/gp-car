@@ -43,7 +43,7 @@ export default function VetrinaProdotti({ products }) {
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const res = await fetch("https://gp-car.vercel.app/db");
+  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
   const products = await res.json();
 
   // By returning { props: { posts } }, the Blog component
