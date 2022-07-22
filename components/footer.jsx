@@ -10,8 +10,8 @@ export default function Footer() {
   return (
     <footer className="bg-light">
       <Container size="big">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="space-y-4 md:col-span-2 lg:col-span-1">
             <h3 className="font-bold text-3xl">
               <img
                 width="300"
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
       </Container>
       <Container size="little">
-        <div className="flex flex-col md:flex-row text-xs text-center md:text-sm md:space-x-10">
+        <div className="flex flex-col xl:flex-row text-xs text-center xl:text-left xl:text-sm xl:space-x-10">
           <p>
             &copy;{new Date().getFullYear()} {BRAND_NAME} - P.Iva 03335850248 -
             C.F. PNAGRG67A25B812X
