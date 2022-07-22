@@ -216,7 +216,9 @@ export default function Home({ products }) {
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
+  const res = await fetch(
+    "https://my-json-server.typicode.com/lucapellizzaro/gp-car"
+  );
   const products = await res.json();
 
   // By returning { props: { posts } }, the Blog component
