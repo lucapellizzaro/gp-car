@@ -8,7 +8,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { productslist } from "../lib/arrayList";
 
-export default function Home() {
+export const getStaticProps = async () => {
+  return {
+    props: {
+      products: productslist,
+    },
+  };
+};
+
+export default function Home({ products }) {
   return (
     <main>
       <NextSeo
@@ -53,7 +61,7 @@ export default function Home() {
       </section>
 
       <section className="bg-light">
-        <Container size="big">
+        <Container>
           <div className="">
             <Article>
               <h2>Servizio assistenza 24h</h2>
@@ -92,7 +100,7 @@ export default function Home() {
       </section>
 
       <section className="">
-        <Container size="big">
+        <Container>
           <div className="mb-14 mx-auto max-w-2xl text-center">
             <Article>
               <h2>Ultimi prodotti inseriti</h2>
@@ -107,7 +115,7 @@ export default function Home() {
             </Article>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {productslist
+            {products
               .filter((id, index) => index < 3)
               .map((item, index) => (
                 <ProductCard

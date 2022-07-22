@@ -4,26 +4,25 @@ import Title from "../../components/title";
 import { productslist } from "../../lib/arrayList";
 import Container from "../../components/container";
 
-export const getStaticProps = async ({ params }) => {
-  const productslist = productlist.filter(
+export async function getStaticProps({ params }) {
+  const productlist = productslist.filter(
     (p) => p.slug.toString() === params.slug
   );
   return {
     props: {
-      product: productslist[0],
+      product: productlist[0],
     },
   };
-};
+}
 
-export const getStaticPaths = async () => {
-  const paths = productlist.map((product) => ({
+export async function getStaticPaths() {
+  const paths = productslist.map((product) => ({
     params: { slug: product.slug.toString() },
   }));
   return { paths, fallback: false };
-};
+}
 
 function Prodotto({ product }) {
-  console.log(product);
   return (
     <main>
       <NextSeo
@@ -32,7 +31,7 @@ function Prodotto({ product }) {
       />
 
       <Title
-        titleH1="prova"
+        titleH1={product.title}
         subtitleH2="GP-CAR garantisce interventi di riparazione e assistenza rapida, su carrelli elevatori elettrici e gasolio, transpallet manuali o elettrici."
       />
       <Container>
