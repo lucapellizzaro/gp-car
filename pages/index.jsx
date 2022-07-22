@@ -2,12 +2,13 @@ import Container from "../components/container";
 import { NextSeo } from "next-seo";
 import Title from "../components/title";
 import Card from "../components/card";
+import ProductCard from "../components/productCard";
 import Article from "../components/article";
 import Link from "next/link";
 import Image from "next/image";
 import { productslist } from "../lib/arrayList";
 
-export default function Home() {
+export default function Home({ products }) {
   return (
     <main>
       <NextSeo
@@ -93,27 +94,35 @@ export default function Home() {
       <section className="">
         <Container size="big">
           <div className="mb-14 mx-auto max-w-2xl text-center">
-            <h3 className="font-bold text-4xl mb-3">
-              Ultimi prodotti inseriti
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Ti presentiamo gli ultimi carrelli elevatori o transpallet
-              arrivati presso la nostra azienda, nuovi, rigenerati o usati con
-              garanzia.
-            </p>
+            <Article>
+              <h2>Ultimi prodotti inseriti</h2>
+              <p>
+                Ti presentiamo gli ultimi carrelli elevatori o transpallet
+                arrivati presso la nostra azienda, nuovi, rigenerati o usati con
+                garanzia.
+              </p>
+              <Link href="/prodotti">
+                <a title="Vedi tutti i prodotti">Vedi tutti i prodotti</a>
+              </Link>
+            </Article>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {productslist.map((item, index) => (
-              <Card
-                key={index}
-                cardTitle={item.title}
-                cardText={item.desc}
-                cardLink="Scopri tutto"
-                cardUrl={item.url}
-                imgAlt={item.imgAlt}
-                imgUrl={item.imgSrc}
-              />
-            ))}
+            {products
+              .filter((id, index) => index < 3)
+              .map((item, index) => (
+                <ProductCard
+                  cardIndex={index}
+                  cardTitle={item.title}
+                  cardText={item.desc}
+                  cardLink="Scopri tutto"
+                  cardUrl={item.slug}
+                  cardCategoria={item.categoria}
+                  cardType={item.type}
+                  cardStato={item.stato}
+                  imgAlt={item.imgAlt}
+                  imgUrl={item.imgSrc}
+                />
+              ))}
           </div>
         </Container>
       </section>
@@ -127,6 +136,7 @@ export default function Home() {
                 La GP-CAR dispone di un parco di <strong>carrelli usati</strong>{" "}
                 in pronta visione, per aziende e rivenditori.
               </p>
+
               <figure className="aspect-w-16 aspect-h-9">
                 <Image
                   layout="fill"
@@ -202,4 +212,18 @@ export default function Home() {
       </section>
     </main>
   );
+}
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts
+  const res = await fetch("https://api.jsonbin.it/bins/6noVqYEG");
+  const products = await res.json();
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      products,
+    },
+  };
 }
