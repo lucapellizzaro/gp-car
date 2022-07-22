@@ -15,7 +15,7 @@ export default function ProductCard({
   cardLink,
 }) {
   return (
-    <div key={cardIndex} className="mb-10 relative">
+    <div className="mb-10 relative">
       <Article>
         <div className="z-20 uppercase font-semibold absolute top-1 right-1 bg-secondary rounded px-2 py-0.5 text-xs lg:text-sm">
           {cardStato}

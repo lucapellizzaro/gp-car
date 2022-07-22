@@ -22,7 +22,7 @@ export default function VetrinaProdotti({ products }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {products.map((item, index) => (
               <ProductCard
-                cardIndex={index}
+                key={index}
                 cardTitle={item.title}
                 cardText={item.desc}
                 cardLink="Scopri tutto"

@@ -111,7 +111,7 @@ export default function Home({ products }) {
               .filter((id, index) => index < 3)
               .map((item, index) => (
                 <ProductCard
-                  cardIndex={index}
+                  key={index}
                   cardTitle={item.title}
                   cardText={item.desc}
                   cardLink="Scopri tutto"
