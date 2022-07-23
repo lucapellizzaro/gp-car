@@ -48,7 +48,7 @@ export default function Footer() {
               className="h-auto w-40 -mt-10"
               width="236"
               height="338"
-              alt="Manutenzione carrelli elevatori transpallet Servizio assistenza 24h"
+              alt="Giorgio Pani Manutenzione professionale carrelli elevatori transpallet Servizio assistenza"
               src="/img/uomo-gp-car.png"
             />
           </div>
