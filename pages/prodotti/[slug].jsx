@@ -3,6 +3,8 @@ import { NextSeo } from "next-seo";
 import Title from "../../components/title";
 import { productslist } from "../../lib/arrayList";
 import Container from "../../components/container";
+import Image from "next/image";
+import Productform from "../../components/productForm";
 
 export async function getStaticProps({ params }) {
   const productlist = productslist.filter(
@@ -26,18 +28,45 @@ function Prodotto({ product }) {
   return (
     <main>
       <NextSeo
-        title="Assistenza, vendita carrelli elevatori, transpallet"
-        description="GP-CAR garantisce interventi di riparazione e assistenza rapida, su carrelli elevatori elettrici e gasolio, transpallet manuali o elettrici."
+        title={"Vendita " + product.title}
+        description={"Vendita " + product.desc}
       />
 
       <Title
         titleH1={product.title}
-        subtitleH2="GP-CAR garantisce interventi di riparazione e assistenza rapida, su carrelli elevatori elettrici e gasolio, transpallet manuali o elettrici."
+        subtitleH2={product.categoria + " - " + product.stato}
       />
       <Container>
         <Article>
-          <h2>{product.title}</h2>
+          <figure className="aspect-w-1 aspect-h-1">
+            <Image
+              layout="fill"
+              placeholder="blur"
+              blurDataURL="data:image/webp;base64,UklGRqICAABXRUJQVlA4WAoAAAAgAAAAOAAAJQAASUNDUBgCAAAAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANlZQOCBkAAAAcAQAnQEqOQAmAD7tYqlOP68sozAYDAPwHYlpAM8oFZr3UVs8m3WG7YzPqQAA/u+4fDye35Gy18Cq1BxNfhlw1Kw7vavf+aYdhKk1WRLCVzt8rztEyCp052+iGc+N0TzYLmgAAA=="
+              src={product.imgSrc}
+              alt={product.imgAlt}
+              className="w-full h-full object-center rounded object-cover lg:w-full lg:h-full"
+            ></Image>
+            <figcaption className="opacity-0">{product.imgAlt}</figcaption>
+          </figure>
+
+          <h3>
+            <span className="text-gray-500">Tipologia: </span>{" "}
+            {product.categoria}
+          </h3>
+          <h3>
+            <span className="text-gray-500">Modello: </span> {product.title}
+          </h3>
+          <h3 className="capitalize">
+            <span className="text-gray-500">Condizioni: </span>
+            {product.stato}
+          </h3>
           <p>{product.desc}</p>
+          <h3>Sei interessanto a questo prodotto?</h3>
+          <p>
+            Compila questo breve modulo, ti risponderemo il prima possibile.
+          </p>
+          <Productform productName={product.title} />
         </Article>
       </Container>
     </main>
