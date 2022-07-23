@@ -17,7 +17,7 @@ export default function VetrinaProdotti({ products }) {
   return (
     <main>
       <NextSeo
-        title="Contatti per un preventivo o informazioni"
+        title="Vetrina carrelli elevatori, transpallet"
         description="Scopri le nostre proposte di carrelli elevatori e transpallet, sia nuovo, rigenerato garantito o usato."
       />
 
