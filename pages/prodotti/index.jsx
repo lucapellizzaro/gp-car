@@ -29,18 +29,11 @@ export default function VetrinaProdotti({ products }) {
       <section className="">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {products.map((item, index) => (
+            {products.map((product) => (
               <ProductCard
-                key={index}
-                cardTitle={item.title}
-                cardText={item.desc}
-                cardLink="Scopri tutto"
-                cardUrl={item.slug}
-                cardCategoria={item.categoria}
-                cardType={item.type}
-                cardStato={item.stato}
-                imgAlt={item.imgAlt}
-                imgUrl={item.imgSrc}
+                key={product.id}
+                cardLink="Vedi prodotto"
+                {...product}
               />
             ))}
           </div>
