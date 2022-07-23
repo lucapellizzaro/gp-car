@@ -3,15 +3,16 @@ import Link from "next/link";
 import Container from "./container";
 import { navlist, pagelist } from "../lib/arrayList";
 import { BRAND_NAME } from "../lib/contants";
+import Image from "next/image";
 
 export default function Footer() {
   const router = useRouter();
 
   return (
     <footer className="bg-light">
-      <Container size="big">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="space-y-4 md:col-span-2 lg:col-span-1">
+      <Container>
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="space-y-4">
             <h3 className="font-bold text-3xl">
               <img
                 width="300"
@@ -41,6 +42,15 @@ export default function Footer() {
                 </a>
               </Link>
             </p>
+          </div>
+          <div>
+            <Image
+              className="h-auto w-40 -mt-10"
+              width="236"
+              height="338"
+              alt="Manutenzione carrelli elevatori transpallet Servizio assistenza 24h"
+              src="/img/uomo-gp-car.png"
+            />
           </div>
           <nav className="space-y-4">
             <h4 className="font-bold text-2xl">I nostri prodotti</h4>

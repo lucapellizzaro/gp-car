@@ -1,9 +1,9 @@
-import Container from "../../components/container";
+import Container from "../components/container";
 import { NextSeo } from "next-seo";
-import Title from "../../components/title";
-import ProductCard from "../../components/productCard";
+import Title from "../components/title";
+import ProductCard from "../components/productCard";
 import Link from "next/link";
-import { productslist } from "../../lib/arrayList";
+import { productslist } from "../lib/arrayList";
 
 export const getStaticProps = async () => {
   return {

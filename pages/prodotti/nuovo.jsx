@@ -32,6 +32,15 @@ export default function Nuovo({ products }) {
           <Article>
             <h3>Peccato, al momento non abbiamo questo tipo di prodotti :/</h3>
             <p>
+              Puoi richiederci gratuitamente di cercare altri prodotti nel
+              mercato dei carrelli elevatori e transpallet, sia nuovi che usati.
+              Scrivici specificando tipologia, condizione e marchio preferito.
+              Ti risponderemo il prima possibile.
+            </p>
+            <Link href="/contatti">
+              <a title="Richiedi ricerca prodotto">Richiedi ricerca prodotto</a>
+            </Link>
+            <p>
               Ma abbiamo altre proposte, di seguito puoi vedere le disponibilità
               attuali.
             </p>
