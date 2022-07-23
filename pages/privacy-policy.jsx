@@ -11,6 +11,7 @@ export default function Privacy() {
   return (
     <main>
       <NextSeo
+        noindex={true}
         title="Privacy policy"
         description="Tutto quello che c&#39;è da sapere sulla gestione dei tuoi dati presso GP-CAR."
       />

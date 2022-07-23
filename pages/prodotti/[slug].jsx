@@ -4,6 +4,7 @@ import Title from "../../components/title";
 import { productslist } from "../../lib/arrayList";
 import Container from "../../components/container";
 import Image from "next/image";
+import Link from "next/link";
 import Productform from "../../components/productForm";
 
 export async function getStaticProps({ params }) {
@@ -28,17 +29,17 @@ function Prodotto({ product }) {
   return (
     <main>
       <NextSeo
-        title={"Vendita " + product.title}
-        description={"Vendita " + product.desc}
+        title={product.categoria + " " + product.stato + " " + product.title}
+        description={"In vendita " + product.desc}
       />
 
       <Title
         titleH1={product.title}
-        subtitleH2={product.categoria + " - " + product.stato}
+        subtitleH2={product.categoria + " " + product.stato}
       />
       <Container>
         <Article>
-          <figure className="aspect-w-1 aspect-h-1">
+          <figure className="aspect-w-5 aspect-h-4">
             <Image
               layout="fill"
               placeholder="blur"
@@ -67,6 +68,20 @@ function Prodotto({ product }) {
             Compila questo breve modulo, ti risponderemo il prima possibile.
           </p>
           <Productform productName={product.title} />
+        </Article>
+      </Container>
+      <Container>
+        <Article>
+          <h3>Non hai trovato quello che ti interessa?</h3>
+          <p>
+            Puoi richiederci gratuitamente di cercare altri prodotti nel mercato
+            dei carrelli elevatori e transpallet, sia nuovi che usati. Scrivici
+            specificando tipologia, condizione e marchio preferito. Ti
+            risponderemo il prima possibile.
+          </p>
+          <Link href="/contatti">
+            <a title="Richiedi ricerca prodotto">Richiedi ricerca prodotto</a>
+          </Link>
         </Article>
       </Container>
     </main>

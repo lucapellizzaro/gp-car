@@ -6,65 +6,21 @@ import Link from "next/link";
 import Image from "next/image";
 import Gridbox from "../components/gridBox";
 
-export default function Aboutus() {
+export default function Error404() {
   return (
     <main>
       <NextSeo
-        title="Profilo aziendale, la nostra storia e servizi"
-        description="Decennale esperienza nel settore dei carrelli elevatori. Interventi di assistenza sulla provincia di Vicenza dal 2006."
+        noindex={true}
+        title="404"
+        description="La pagina non è stata trovata, ma nessun problema di seguito ti proponiamo altre pagine del sito."
       />
 
       <Title
-        titleH1="Profilo aziendale"
-        subtitleH2="Decennale esperienza nel settore dei carrelli elevatori. Interventi di assistenza sulla provincia di Vicenza dal 2006."
+        titleH1="Error 404 :-/"
+        subtitleH2="Ahimè la pagina non è stata trovata, ma nessun problema! Di seguito ti proponiamo altre pagine del sito."
       />
 
-      <section className="">
-        <Container size="big">
-          <div className="">
-            <Article>
-              <h2>La nostra storia</h2>
-              <p>
-                La ditta GP-CAR di <b>Giorgio Pani</b> è un’impresa individuale
-                nata nel 2006 con una decennale esperienza nel settore dei
-                carrelli elevatori. Interventi di assistenza su provincia di
-                Vicenza, Verona, Padova, Treviso e Venezia.
-              </p>
-              <figure className="aspect-w-7 aspect-h-3">
-                <Image
-                  layout="fill"
-                  placeholder="blur"
-                  blurDataURL="data:image/webp;base64,UklGRnwIAABXRUJQVlA4WAoAAAAgAAAAcgIA1QEASUNDUBgCAAAAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANlZQOCA+BgAAEHAAnQEqcwLWAT7tdLFUqay0oyHyyoKQHYlpbuFkmjb78vHgj6mt9dUYfxuKH9Lzp9gFTVqxxtXmCDaPl+ope5wuLKBeJWdOMFnWzuWcbTtjoCrMQHzbq7/mWFsAOFYBSp2nrGF6LY6AgWsfG1Ap0qh/czK1oQmXs7mGfBVzP7qXmEU6dsdAQ6WPjLtzMl7ECsx4zttzFydbEDWnhqi9kLX34ARlOna0I3crUzJeyEzgPlOnbHQEOFt7434ARlOna0IkP7mZL/uS/8Vbx7augCMqBIr2z5Tp2x0BCm4nWC+nf3MyX/irczJey0EQjKdOJmjCKdEfhzr8K4C+ngVmH9zSrczJcA/vobmpCgmPZu1qMpE2+OZkvYf3MyX/cl/3JeVl38fCOAvp394x9nXJr2p8K2Q+nf3MyXsP70F29BFVSpylDkf+izowgEEVbv7mZL10Njcl7D+5mS9h/czJew/uGMY7B2DznlJrH0OVbqfxfxjL2H9yWESH9zMl7D+5mS9h/cym/lzuGbPtx0R+Sh7KCwKNAG3Spy8Lomp564C+nf3MyXsQI4NulPAomfUUx/opThjQOLRzWp2fyrjqIfTv7mZL2H7GzF7uqheXokYyKm8Y9+m/9TanfMIkP7mZL2H95LLv4vcYUxSieK/S6zHsaAaJMVEmKicVRTWp8K2Q+nfsVOXoiDzregxVSJ6rAq3a2gcWMe/R21Gagw/Ul7CcgBrkqdRzuMfAPu49jm9cbV5ggsBH0J8v+1eQUXGgcWM8IvECDHzBBY0DixzKdZzvYCmN80DixiL7yRfmgcWMe/Q8mxJQnoyEWYN+ece80DiqTLC0ugsaBxYx11U1Vsy21VUc37MESGXMRgsY9NezrPR8BBY0C3aU8lY+qwxsKPcR37wYcnVR29rxAgx8wQWNA4p3zCN3Jeuhvoxb7mDgZSpVfRgsa9nWej4CCxoFxlFzoaza0eK2OvcpN1LFNRbp18Ht7NXmCCxoHFrC/ueyFr7+jic3YjAAaSMY4zKKU0FbhWPfo+AifMDjS199//trMPvfAB6CSzIq5h3y42rzBBYz7InxtSf6k1ufOeIpTblnUXeuIGrzQOLGPfrWFgIdK8bxREHO2NWpjR8+kQiTPCse/R8BBY0DixIJMlEhuiX5MmxYEY44rPR8BBY0Dg0TL1T/eWxOO4ruHC/UetOZ2rzQOLGPcgAA/vaSkNpAvALypjzsGvXMOZW0VBfxbWVEyYsXInvJrMMghhbtc+AyFxCadBiyXOy1UuLGsFlcEKSon3Yz5anm7P+R/U/6YLiYGoHcJrKF9aCsr2kqpWEamQZGIt0ZB7q4asX/wWZwpb7F+XWkub/wK/spNBkDoxAY9L/+y8/pZw05OJ9ooRc628YmscgU+Kmk4hkSh6t4Sv+2Bn/JLZHEsHpK7weRldCqYIGyEoqu81kwLXm5rKLGp5bIgFZ2xSUhUF/Bc2bgeDgDpuN/CEsEgmy5lFHuiVlosGT4RTz9ry78gfa/rP1RkIDmK1ZJgI6rew2em20i0wrwKRlIKlAV0+tMtqG8ruU208viVTKhAgAgv6zbKmCsZ7lgyLpNZKqEqF1eZJQsTGJg34sZJZ4iVQ+g7ecnOK3Lyd2lJAngO/tZdIVTIV0W8NY/89vtMcAFtuS9CtJM1cjxmu33CA4OzDFEB275wb23AvAB1+1tNW+iQMUDU+SeG8Bn2POtKOyA/k4OqyNKdHoHpnPGf93cdZqICK5+iFnXKDHB54/Nwd3p3iTm2edb1KgCkmxG0/VbFC0UHruZRAHh5tHl9ujA6kEB1/t2bTd4Rl/WKuvMigqrHEUiA60V7hXRfJNg6WbSHgzcPkyzrBgBAAsFby89zJpRX8Tr8XQOrqCAAi2+t7qOmwavCxxneU7AACPOVLm7SI2gcx0o52m1S3vbFYACzgRzghhs0bZLYoyyk1HA+9iOtCbcgAXS4OhW+7sj0x8NBZlnGIILI0E92lWavIQDPNdMHWa2vWoFretE42zQAK1YutfAUhLAUTTnh5eTsAy2/2382GoCQMs3ovjJmIFuvAd7II2JY5cfyI+hx4F+JgmqwHKmHZROxt1Mat7tAWQCEq7Cv7sMThQO+dQRoZa4GdQAAAA="
-                  src="/img/montini-carrelli-elevatore-ammortizzatori.jpeg"
-                  alt="Foto azienda GP-CAR Carrelli elevatori transpallet Vicenza"
-                  className="w-full h-full object-center rounded object-cover lg:w-full lg:h-full"
-                ></Image>
-                <figcaption className="opacity-0">
-                  Azienda GP-CAR Carrelli elevatori transpallet Vicenza
-                </figcaption>
-              </figure>
-              <p>
-                Con sede a Olmo di Creazzo nel vicentino, propone vendita di
-                carrelli elevatori Montini, assistenza tecnica specializzata
-                muletti elettrici e gasolio, usato garantino Montini e rivendita
-                multimarca rigenerati.
-              </p>
-              <p>
-                Rivenditore autorizzato Montini Carrelli Elevatori su provincia
-                di Vicenza. Ampia gamma di muletti elettrici adatti alle imprese
-                manifatturiera e alimentari.
-              </p>
-              <Link href="/prodotti">
-                <a title="Vedi tutti i carrelli elevatori">
-                  Vedi la nostra vetrina
-                </a>
-              </Link>
-            </Article>
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-light">
+      <section>
         <Container size="big">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <Gridbox

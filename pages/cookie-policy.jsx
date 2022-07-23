@@ -8,6 +8,7 @@ export default function Cookies() {
   return (
     <main>
       <NextSeo
+        noindex={true}
         title="Cookies policy"
         description="In questo sito web abbiamo deciso di non utilizzare cookie di tracciabilità e profiliazione per fini di marketing."
       />
