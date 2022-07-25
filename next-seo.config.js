@@ -5,7 +5,7 @@ export default {
     site_name: "GP-CAR",
     images: [
       {
-        url: "https://gp-car.com/open-gp-car.png",
+        url: "https://gp-car.com/img/open-gp-car.png",
         width: 1200,
         height: 630,
         alt: "Foto GP-CAR Carrelli elevatori",

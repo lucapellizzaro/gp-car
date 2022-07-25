@@ -34,7 +34,7 @@ function Prodotto({ product }) {
         openGraph={{
           images: [
             {
-              url: "https://gp-car.com/" + product.imgOpg,
+              url: "https://gp-car.com/img/" + product.imgOpg,
               width: 1200,
               height: 630,
               alt:

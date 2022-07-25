@@ -20,7 +20,7 @@ export default function ProductCard({
             query: { slug: slug },
           }}
         >
-          <a>
+          <a title={cardLink}>
             <div className="z-20 uppercase font-semibold absolute top-1 right-1 bg-secondary rounded px-2 py-0.5 text-xs lg:text-sm">
               {stato}
             </div>
