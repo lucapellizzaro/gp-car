@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </h3>
 
-            <h4 className="font-bold text-2xl">{BRAND_NAME}</h4>
+            <h4 className="font-bold text-xl xl:text-2xl">{BRAND_NAME}</h4>
 
             <p>
               Via Cima XII, 8a
@@ -53,7 +53,7 @@ export default function Footer() {
             />
           </div>
           <nav className="space-y-4">
-            <h4 className="font-bold text-2xl">I nostri prodotti</h4>
+            <h4 className="font-bold text-xl xl:text-2xl">I nostri prodotti</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
               {navlist.map((item, index) => (
                 <li key={index}>
@@ -74,7 +74,7 @@ export default function Footer() {
             </ul>
           </nav>
           <nav className="space-y-4">
-            <h4 className="font-bold text-2xl">Scopri tutto</h4>
+            <h4 className="font-bold text-xl xl:text-2xl">Scopri tutto</h4>
             <ul className="text-gray-600 space-y-3 ml-3">
               {pagelist.map((item, index) => (
                 <li key={index}>
