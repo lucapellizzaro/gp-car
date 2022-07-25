@@ -43,9 +43,10 @@ export default function Footer() {
               </Link>
             </p>
           </div>
-          <div>
+          <div className="p-6 -mt-12">
             <Image
-              className="h-auto w-40 -mt-10"
+              className="h-auto w-40"
+              layout="responsive"
               width="236"
               height="338"
               alt="Giorgio Pani Manutenzione professionale carrelli elevatori transpallet Servizio assistenza"
