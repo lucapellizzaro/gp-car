@@ -31,6 +31,23 @@ function Prodotto({ product }) {
       <NextSeo
         title={product.categoria + " " + product.stato + " " + product.title}
         description={"In vendita " + product.desc}
+        openGraph={{
+          images: [
+            {
+              url: "https://gp-car.com/" + product.imgOpg,
+              width: 1200,
+              height: 630,
+              alt:
+                "Foto " +
+                product.categoria +
+                " " +
+                product.stato +
+                " " +
+                product.title,
+              type: "image/png",
+            },
+          ],
+        }}
       />
 
       <Title
